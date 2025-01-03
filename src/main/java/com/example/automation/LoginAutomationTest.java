@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test; // Ensure this import is present
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LoginAutomationTest {
@@ -12,8 +12,7 @@ public class LoginAutomationTest {
     public void testLogin() {
         // Set up the WebDriver with the correct ChromeDriver path
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\vynub\\Downloads\\chromedriver-win64\\chromedriver-win64");
-        
-        // Create a new instance of ChromeDriver
+
         WebDriver driver = new ChromeDriver();
 
         try {
